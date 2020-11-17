@@ -1,11 +1,16 @@
 describe('developerj',function(){
 
   it('Visit the URL',function(){
-      cy.visit('https://www.google.com/');
+      cy.visit('http://a.testaddressbook.com/');
   });
 
   it('Click on calculator',function () {
-    cy.get('.gLFyf.gsfi').click();
+    cy.get('#sign-in').click();
+    cy.get('#session_email').type('michael_dada2003@yahoo.co.uk');
+    cy.get('#session_password').type('forever');
+    //cy.get('#Sign-up').click();
+    //cy.get('#user_email').type('Test');
+
 
 
   });
